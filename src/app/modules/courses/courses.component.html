@@ -1,1 +1,55 @@
-<p>courses works!</p>
+<div class="search section">
+  <input type="search" class="search__input" placeholder="Search..." />
+  <button type="button" class="btn btn-icon">
+    <span class="material-symbols-outlined">
+      search
+    </span>
+    Search course
+  </button>
+  <button type="button" class="btn btn-icon btn--add-course">
+    <span class="material-symbols-outlined">
+      add_circle
+    </span>
+    Add course
+  </button>
+</div>
+
+<div class="courses section">
+  <div class="course section" *ngFor="let course of temp">
+    <div class="course-control">
+      <button type="button" class="btn btn-icon">
+        <span class="material-symbols-outlined">
+          edit
+        </span>
+        Edit course
+      </button>
+      <button type="button" class="btn btn-icon">
+        <span class="material-symbols-outlined">
+          delete_forever
+        </span>
+        Delete course
+      </button>
+    </div>
+    <h2 class="course__title">
+      Course title
+    </h2>
+    <div class="course-time">
+      <span class="course-time__item">
+        <span class="material-symbols-outlined">
+          schedule
+        </span>
+        1h 20min
+      </span>
+      <time class="course-time__item" datetime="">
+        <span class="material-symbols-outlined">
+          event
+        </span>
+        39 November, 2032
+      </time>
+    </div>
+    <p class="course__description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repellat odit suscipit porro omnis cupiditate
+      sit unde rem laborum, reiciendis accusamus ut, aut quia, adipisci illo est! Quibusdam, tempore pariatur?
+    </p>
+  </div>
+</div>
